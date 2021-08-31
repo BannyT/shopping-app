@@ -27,6 +27,14 @@ const routes: Routes = [
     path: 'addshop',
     loadChildren: () => import('./pages/addshop/addshop.module').then( m => m.AddshopPageModule)
   },
+  {
+    path: 'gallery',
+    loadChildren: () => import('./pages/gallery/gallery.module').then( m => m.GalleryPageModule)
+  },
+  {
+    path: 'modal',
+    loadChildren: () => import('./pages/modal/modal.module').then( m => m.ModalPageModule)
+  },
 ];
 
 @NgModule({
