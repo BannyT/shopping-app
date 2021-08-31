@@ -55,6 +55,10 @@ const routes: Routes = [
     path: 'tab-bars',
     loadChildren: () => import('./pages/tab-bars/tab-bars.module').then( m => m.TabBarsPageModule)
   },
+  {
+    path: 'shop',
+    loadChildren: () => import('./pages/shop/shop.module').then( m => m.ShopPageModule)
+  },
 ];
 
 @NgModule({
