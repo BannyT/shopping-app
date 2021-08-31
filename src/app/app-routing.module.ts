@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'aboutshop',
     loadChildren: () => import('./pages/aboutshop/aboutshop.module').then( m => m.AboutshopPageModule)
   },
+  {
+    path: 'addshop',
+    loadChildren: () => import('./pages/addshop/addshop.module').then( m => m.AddshopPageModule)
+  },
 ];
 
 @NgModule({
